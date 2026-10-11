@@ -1,0 +1,23 @@
+project:
+  type: default
+
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/140a6571d48b6f915c3d22a3cef325d6c1d7966a/norsk-apa-manual.csl
+lang: en-GB
+
+format:
+  pdf:
+    documentclass: scrreprt
+    classoption: 12pt
+    pdf-engine: lualatex
+    pdf-standard: ua-2
+    include-in-header: latex/preamble.tex
+    number-sections: true
+    toc: true
+    lof: true
+    lot: true
+    colorlinks: true
+    link-citations: true
+    linkcolor: blue
+    citecolor: blue
+    urlcolor: blue

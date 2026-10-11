@@ -1,0 +1,58 @@
+\usepackage{fontspec}
+\setmainfont{Arial}
+\setsansfont{Arial}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage[document]{ragged2e}
+\usepackage{caption}
+\captionsetup{
+  justification=raggedright,
+  singlelinecheck=false,
+  labelfont=bf,
+  textfont=bf
+}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{\fill}
+
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{titlepage}
+    \centering
+    \vspace*{\fill}
+    {\Large Cover page here\par}
+    \vspace*{\fill}
+  \end{titlepage}%
+  \begin{titlepage}
+    \centering
+    \vspace*{0.7cm}
+    \includegraphics[width=0.24\textwidth,alt={OsloMet logo}]{figures/OSLOMET-logo.png}\par
+    \vspace{0.7cm}
+    {\huge\bfseries \@title\par}
+    \vspace{0.4cm}
+    {\Large \@author\par}
+    \vfill
+    {\large Project submitted as part of Applied Computer and Information Technology (ACITxxxx)\par}
+    {\large 10 credits\par}
+    \vspace{1cm}
+    {\large Department of Computer Science\par}
+    {\large Faculty of Technology, Art and Design\par}
+    \vspace{0.8cm}
+    {\Large OSLO METROPOLITAN UNIVERSITY\par}
+    \vfill
+    {\large \@date\par}
+  \end{titlepage}%
+}
+\AtBeginDocument{%
+  \@ifundefined{codelisting}{}{%
+    \floatstyle{plain}%
+    \restylefloat{codelisting}%
+    \floatname{codelisting}{Code}%
+    \captionsetup[codelisting]{%
+      justification=raggedright,
+      singlelinecheck=false,
+      labelfont=bf,
+      textfont=bf
+    }%
+  }%
+}
+\makeatother

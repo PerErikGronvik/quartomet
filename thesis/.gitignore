@@ -1,0 +1,14 @@
+.quarto/
+main.pdf
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.run.xml/.quarto/
+**/*.quarto_ipynb
+
+/.quarto/
