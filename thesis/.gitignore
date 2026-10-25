@@ -1,5 +1,8 @@
 .quarto/
 main.pdf
+main.html
+main-luamml-mathml.html
+main_files/
 *.aux
 *.log
 *.out

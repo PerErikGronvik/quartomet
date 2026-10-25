@@ -2,7 +2,7 @@ project:
   type: default
 
 bibliography: references.bib
-csl: https://raw.githubusercontent.com/citation-style-language/styles/140a6571d48b6f915c3d22a3cef325d6c1d7966a/norsk-apa-manual.csl
+csl: norsk-apa-manual.csl
 lang: en-GB
 
 format:
